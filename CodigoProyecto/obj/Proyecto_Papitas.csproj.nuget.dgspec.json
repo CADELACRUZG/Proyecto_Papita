@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LUFU\\Documents\\OneDrive\\Proyecto_Papitas\\Proyecto_Papitas\\CodigoProyecto\\Proyecto_Papitas.csproj": {}
+    "C:\\Users\\lufuj\\OneDrive\\Documentos\\OneDrive\\Proyecto_Papitas\\Proyecto_Papitas\\CodigoProyecto\\Proyecto_Papitas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LUFU\\Documents\\OneDrive\\Proyecto_Papitas\\Proyecto_Papitas\\CodigoProyecto\\Proyecto_Papitas.csproj": {
+    "C:\\Users\\lufuj\\OneDrive\\Documentos\\OneDrive\\Proyecto_Papitas\\Proyecto_Papitas\\CodigoProyecto\\Proyecto_Papitas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LUFU\\Documents\\OneDrive\\Proyecto_Papitas\\Proyecto_Papitas\\CodigoProyecto\\Proyecto_Papitas.csproj",
+        "projectUniqueName": "C:\\Users\\lufuj\\OneDrive\\Documentos\\OneDrive\\Proyecto_Papitas\\Proyecto_Papitas\\CodigoProyecto\\Proyecto_Papitas.csproj",
         "projectName": "Proyecto_Papitas",
-        "projectPath": "C:\\Users\\LUFU\\Documents\\OneDrive\\Proyecto_Papitas\\Proyecto_Papitas\\CodigoProyecto\\Proyecto_Papitas.csproj",
-        "packagesPath": "C:\\Users\\LUFU\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LUFU\\Documents\\OneDrive\\Proyecto_Papitas\\Proyecto_Papitas\\CodigoProyecto\\obj\\",
+        "projectPath": "C:\\Users\\lufuj\\OneDrive\\Documentos\\OneDrive\\Proyecto_Papitas\\Proyecto_Papitas\\CodigoProyecto\\Proyecto_Papitas.csproj",
+        "packagesPath": "C:\\Users\\lufuj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lufuj\\OneDrive\\Documentos\\OneDrive\\Proyecto_Papitas\\Proyecto_Papitas\\CodigoProyecto\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LUFU\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\lufuj\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

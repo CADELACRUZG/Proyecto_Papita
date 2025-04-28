@@ -2,7 +2,6 @@
 
 <PageTitle>Figura2</PageTitle>
 
-
 <style>
     html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -66,6 +65,25 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+.triangle-container {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.triangle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.measurements {
+    font-size: 12px;
+    color: #333;
+}
 </style>
 
 <h1>Proyecto de Leyes Trigonométricas</h1>
@@ -75,15 +93,44 @@ a, .btn-link {
         <div class="col-md-6">
             <div class="card">
                 <div class="card-header bg-primary text-white">
-                    <h3>Figura 1: Pirámide Triangular</h3>
+                    <h3>Cálculo de Triángulos</h3>
                 </div>
                 <div class="card-body">
-                    <div class="form-group">
-                        <label for="valorS">Valor de s (lado base):</label>
-                        <input type="number" id="valorS" class="form-control" @bind="s" step="0.01" />
+                    <div class="alert alert-info">
+                        A continuación se le solicitarán datos necesarios para resolver el problema
                     </div>
                     
-                    <button class="btn btn-primary mt-3" @onclick="CalcularFigura1">Calcular</button>
+                    <h4>Primer Triángulo</h4>
+                    <div class="form-group">
+                        <label for="catetoA">Ingresa el valor del primer cateto:</label>
+                        <input type="number" id="catetoA" class="form-control" @bind="catetoA" step="0.01" placeholder="Ingrese valor" />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="catetoB">Ingresa el valor del segundo cateto:</label>
+                        <input type="number" id="catetoB" class="form-control" @bind="catetoB" step="0.01" placeholder="Ingrese valor" />
+                    </div>
+                    
+                    @if (paso >= 1)
+                    {
+                        <div class="alert alert-success mt-3">
+                            Hipotenusa del primer triángulo: @hipotenusa.ToString("F2")
+                        </div>
+                    
+                        <h4 class="mt-3">Segundo Triángulo</h4>
+                        <div class="form-group">
+                            <label for="catetoOtro">Ingresa el cateto Altura:</label>
+                            <input type="number" id="catetoOtro" class="form-control" @bind="catetoOtro" step="0.01" placeholder="Ingrese valor" />
+                        </div>
+                    }
+                    
+                    @if (paso == 0)
+                    {
+                        <button class="btn btn-primary mt-3" @onclick="CalcularPrimerTriangulo">Calcular Primer Triángulo</button>
+                    }
+                    else if (paso == 1)
+                    {
+                        <button class="btn btn-primary mt-3" @onclick="CalcularSegundoTriangulo">Calcular Segundo Triángulo</button>
+                    }
                     
                     @if (mostrarResultados)
                     {
@@ -91,28 +138,20 @@ a, .btn-link {
                             <h4>Resultados:</h4>
                             <ul class="list-group">
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    Altura (h) = √(s²+s²) = s√2
-                                    <span class="badge bg-primary rounded-pill">@altura.ToString("F2")</span>
+                                    Hipotenusa del primer triángulo
+                                    <span class="badge bg-primary rounded-pill">@hipotenusa.ToString("F2")</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    Arista (√(s²+s²+s²) = s√3)
-                                    <span class="badge bg-primary rounded-pill">@arista.ToString("F2")</span>
+                                    Hipotenusa del segundo triángulo
+                                    <span class="badge bg-primary rounded-pill">@hipotenusa2.ToString("F2")</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    Longitud A: √(s²+(s/2)²) = s√(5/4)
-                                    <span class="badge bg-primary rounded-pill">@longitudA.ToString("F2")</span>
+                                    Tercer triángulo - Cateto Altura
+                                    <span class="badge bg-primary rounded-pill">@catetoAltura.ToString("F2")</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    Longitud B: √(s²+s²) = s√2
-                                    <span class="badge bg-primary rounded-pill">@longitudB.ToString("F2")</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    Longitud C: √(s²+1²) = √(s²+1)
-                                    <span class="badge bg-primary rounded-pill">@longitudC.ToString("F2")</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    Ángulo B (grados)
-                                    <span class="badge bg-primary rounded-pill">@anguloB.ToString("F2")°</span>
+                                    El ángulo C es
+                                    <span class="badge bg-danger rounded-pill">@anguloC.ToString("F2")°</span>
                                 </li>
                             </ul>
                         </div>
@@ -128,13 +167,11 @@ a, .btn-link {
                 </div>
                 <div class="card-body">
                     <ul class="list-group">
-                        <li class="list-group-item">h = √(s²+s²) = s√2</li>
-                        <li class="list-group-item">Arista = √(s²+s²+s²) = s√3</li>
-                        <li class="list-group-item">Lado A = √(s²+(3√(s)/4)²) = 3s/4</li>
-                        <li class="list-group-item">Lado B = √(s²+1²) = √(s²+1)</li>
-                        <li class="list-group-item">Lado C = √(s²+s²) = s√2</li>
-                        <li class="list-group-item">B = cos⁻¹((a²+c²-b²)/(2ac))</li>
-                        <li class="list-group-item">B = cos⁻¹(((33/4)²+(33/4)²-(5√2)²)/(2(33/4)(33/4)))</li>
+                        <li class="list-group-item">Hipotenusa (Teorema de Pitágoras): h = √(a² + b²)</li>
+                        <li class="list-group-item">Segunda Hipotenusa: h₂ = √(h₁² + c²)</li>
+                        <li class="list-group-item">Cateto Altura: catetoAltura = catetoB * 2</li>
+                        <li class="list-group-item">Ley de Cosenos: cos(C) = (a² + b² - c²) / (2ab)</li>
+                        <li class="list-group-item">Ángulo en grados: C = cos⁻¹(cos(C)) × (180/π)</li>
                     </ul>
                 </div>
             </div>
@@ -143,9 +180,81 @@ a, .btn-link {
                 <div class="card-header bg-success text-white">
                     <h3>Visualización</h3>
                 </div>
-                <div class="card-body text-center">
-                    <img src="images/figura1.png" alt="Figura 1" class="img-fluid" style="max-height: 250px;" />
-                    <p class="mt-2">Representación de la pirámide triangular</p>
+                <div class="card-body">
+                    @if (paso >= 1)
+                    {
+                        <div>
+                            <h5>Primer Triángulo</h5>
+                            <div class="triangle-container">
+                                <div style="width: 200px; height: 50px; border: 1px solid #ccc;">
+                                    <svg class="triangle" viewBox="0 0 100 100" width="100%" height="100%">
+                                        <polygon
+                                            points="10,90 @(10 + escalarValor(catetoA)) ,90 @(10 + escalarValor(catetoA)) ,@(90 - escalarValor(catetoB))"
+                                            fill="rgba(0,123,255,0.2)"
+                                            stroke="blue"
+                                            stroke-width="2" />
+
+                                        <!-- Etiquetas dinámicas -->
+                                        <text x="@(10 + escalarValor(catetoA) / 2)" y="98" class="measurements" font-size="8px">@catetoA</text>
+                                        <text x="@(12 + escalarValor(catetoA))" y="@(90 - escalarValor(catetoB) / 2)" class="measurements" font-size="8px">@catetoB</text>
+                                        <text x="@(10 + escalarValor(catetoA) / 2)" y="@(90 - escalarValor(catetoB) / 2)" class="measurements" font-size="8px">@hipotenusa.ToString("F2")</text>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                    }
+                    
+                    @if (mostrarResultados)
+                    {
+                        <div class="mt-3">
+                            <h5>Segundo Triángulo</h5>
+                            <div class="triangle-container">
+                                <svg class="triangle" viewBox="0 0 300 300">
+                                    <polygon 
+                                        points="10,290 @(10 + escalarValor(hipotenusa)),290 @(10 + escalarValor(hipotenusa)),@(290 - escalarValor(catetoOtro))"
+                                        fill="rgba(40,167,69,0.2)" 
+                                        stroke="green" 
+                                        stroke-width="2" />
+                                    
+                                    <!-- Etiquetas -->
+                                    <text x="@(5 + escalarValor(hipotenusa)/2)" y="295" class="measurements">@hipotenusa.ToString("F2")</text>
+                                    <text x="@(15 + escalarValor(hipotenusa))" y="@(290 - escalarValor(catetoOtro)/2)" class="measurements">@catetoOtro</text>
+                                    <text x="@(5 + escalarValor(hipotenusa)/2)" y="@(290 - escalarValor(catetoOtro)/2)" class="measurements">@hipotenusa2.ToString("F2")</text>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-3">
+                            <h5>Tercer Triángulo (Ángulo C)</h5>
+                            <div class="triangle-container">
+                                <svg class="triangle" viewBox="0 0 300 300">
+                                    <!-- Dibujamos un triángulo usando la hipotenusa2 y catetoAltura -->
+                                    <polygon 
+                                        points="10,290 @(10 + escalarValor(hipotenusa2)),290 @(10 + escalarValor(hipotenusa2)/2),@(290 - escalarValor(catetoAltura))"
+                                        fill="rgba(220,53,69,0.2)" 
+                                        stroke="red" 
+                                        stroke-width="2" />
+                                    
+                                    <!-- Etiquetas -->
+                                    <text x="@(5 + escalarValor(hipotenusa2)/2)" y="295" class="measurements">@hipotenusa2.ToString("F2")</text>
+                                    <text x="@(15 + escalarValor(hipotenusa2)/2)" y="@(290 - escalarValor(catetoAltura)/2)" class="measurements">@hipotenusa2.ToString("F2")</text>
+                                    <text x="@(5 + escalarValor(hipotenusa2)/4)" y="@(290 - escalarValor(catetoAltura)/2)" class="measurements">@catetoAltura.ToString("F2")</text>
+                                    
+                                    <!-- Ángulo C -->
+                                    <path d="M @(10 + escalarValor(hipotenusa2)) 290 A 30 30 0 0 1 @(10 + escalarValor(hipotenusa2) - 30) @(290 - 30)" 
+                                          fill="none" stroke="red" stroke-width="2"/>
+                                    <text x="@(10 + escalarValor(hipotenusa2) - 40)" y="270" class="measurements">C = @anguloC.ToString("F2")°</text>
+                                </svg>
+                            </div>
+                        </div>
+                    }
+                    else if (paso == 0)
+                    {
+                        <div class="text-center">
+                            <p>Complete los datos del primer triángulo y haga clic en Calcular para continuar</p>
+                        </div>
+                    }
                 </div>
             </div>
         </div>
@@ -153,35 +262,51 @@ a, .btn-link {
 </div>
 
 @code {
-    private double s = 1.0;
-    private double altura;
-    private double arista;
-    private double longitudA;
-    private double longitudB;
-    private double longitudC;
-    private double anguloB;
+    private double catetoA;
+    private double catetoB;
+    private double catetoOtro;
+    private double hipotenusa;
+    private double hipotenusa2;
+    private double catetoAltura;
+    private double anguloC;
     private bool mostrarResultados = false;
-
-    private void CalcularFigura1()
+    private int paso = 0; // Control de flujo paso a paso
+    
+    private void CalcularPrimerTriangulo()
     {
-        // Cálculos según las fórmulas mostradas en la imagen
-        altura = s * Math.Sqrt(2);
-        arista = s * Math.Sqrt(3);
+        // Primer Triangulo 
+        // Calculamos la hipotenusa usando el teorema de Pitágoras
+        hipotenusa = Math.Sqrt(Math.Pow(catetoA, 2) + Math.Pow(catetoB, 2));
+        paso = 1;
+    }
+    
+    private void CalcularSegundoTriangulo()
+    {
+        // Segundo Triangulo
+        // Calculamos la hipotenusa usando el teorema de Pitágoras
+        hipotenusa2 = Math.Sqrt(Math.Pow(hipotenusa, 2) + Math.Pow(catetoOtro, 2)); 
         
-        // Para los lados según la imagen
-        longitudA = Math.Sqrt(Math.Pow(s, 2) + Math.Pow(3 * Math.Sqrt(s) / 4, 2));
-        longitudB = s * Math.Sqrt(2);
-        longitudC = Math.Sqrt(Math.Pow(s, 2) + 1);
+        // Tercer triangulo 
+        catetoAltura = catetoB * 2;
         
-        // Para el ángulo B utilizando la ley de cosenos
-        double a = 33.0 / 4.0;
-        double b = 5.0 * Math.Sqrt(2);
-        double c = 33.0 / 4.0;
-        
-        double cosB = (Math.Pow(a, 2) + Math.Pow(c, 2) - Math.Pow(b, 2)) / (2 * a * c);
-        anguloB = Math.Acos(cosB) * 180 / Math.PI;
+        // El angulo C del triangulo usando ley de cosenos
+        double cosC = (Math.Pow(hipotenusa2, 2) + Math.Pow(hipotenusa2, 2) - Math.Pow(catetoAltura, 2)) / (2 * hipotenusa2 * hipotenusa2);
+
+        // Aseguramos que el valor esté en el rango [-1, 1] para evitar errores numéricos
+        cosC = Math.Max(-1.0, Math.Min(1.0, cosC));
+
+        // Calculamos el ángulo en radianes y lo convertimos a grados
+        anguloC = Math.Acos(cosC) * (180 / Math.PI);
+        anguloC = Math.Round(anguloC, 2);
         
         mostrarResultados = true;
     }
+    
+    // Función para escalar valores para la visualización
+    private double escalarValor(double valor)
+    {
+        // Factor de escala: asume que los valores están entre 1-20, ajusta según necesidades
+        double factorEscala = 12;
+        return valor * factorEscala;
+    }
 }
-
