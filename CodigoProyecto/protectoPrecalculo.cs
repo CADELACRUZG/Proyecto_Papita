@@ -39,7 +39,7 @@ class proyectoPrecalculo
 
         //         break;
         //     case 3:
-            problemaTres();
+        //        problemaTres();
         //         break;
         // }
     }
@@ -54,7 +54,7 @@ class proyectoPrecalculo
         double catetoB = Convert.ToDouble(Console.ReadLine());
 
         // Calculamos la hipotenusa usando el teorema de Pitágoras
-        double hipotenusa = Math.Sqrt(Math.Pow(catetoA, 2) + Math.Pow(catetoB, 2));
+        double hipotenusa = Math.Sqrt((Math.Pow(catetoA, 2) + Math.Pow(catetoB, 2)));
         Console.WriteLine(hipotenusa);
         Console.WriteLine("Segundo Triangulo");
         // Mostramos el resultado
