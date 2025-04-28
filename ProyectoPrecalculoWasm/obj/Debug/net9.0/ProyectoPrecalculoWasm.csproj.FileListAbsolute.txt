@@ -1075,10 +1075,10 @@ C:\Users\lufuj\OneDrive\Documentos\OneDrive\Proyecto_Papitas\Proyecto_Papitas\Pr
 C:\Users\lufuj\OneDrive\Documentos\OneDrive\Proyecto_Papitas\Proyecto_Papitas\ProyectoPrecalculoWasm\obj\Debug\net9.0\compressed\drhq7vqnmc-8vyfqsqgz1.gz
 C:\Users\lufuj\OneDrive\Documentos\OneDrive\Proyecto_Papitas\Proyecto_Papitas\ProyectoPrecalculoWasm\obj\Debug\net9.0\compressed\pk75pbxg69-b8tevx1py0.gz
 C:\Users\lufuj\OneDrive\Documentos\OneDrive\Proyecto_Papitas\Proyecto_Papitas\ProyectoPrecalculoWasm\obj\Debug\net9.0\compressed\an3q7egzhz-4d85u1mtcx.gz
-C:\Users\lufuj\OneDrive\Documentos\OneDrive\Proyecto_Papitas\Proyecto_Papitas\ProyectoPrecalculoWasm\bin\Debug\net9.0\wwwroot\_framework\ProyectoPrecalculoWasm.m5q9p7lpc5.pdb
-C:\Users\lufuj\OneDrive\Documentos\OneDrive\Proyecto_Papitas\Proyecto_Papitas\ProyectoPrecalculoWasm\bin\Debug\net9.0\wwwroot\_framework\ProyectoPrecalculoWasm.vh7thceqt8.wasm
-C:\Users\lufuj\OneDrive\Documentos\OneDrive\Proyecto_Papitas\Proyecto_Papitas\ProyectoPrecalculoWasm\bin\Debug\net9.0\wwwroot\_framework\ProyectoPrecalculoWasm.m5q9p7lpc5.pdb.gz
-C:\Users\lufuj\OneDrive\Documentos\OneDrive\Proyecto_Papitas\Proyecto_Papitas\ProyectoPrecalculoWasm\bin\Debug\net9.0\wwwroot\_framework\ProyectoPrecalculoWasm.vh7thceqt8.wasm.gz
-C:\Users\lufuj\OneDrive\Documentos\OneDrive\Proyecto_Papitas\Proyecto_Papitas\ProyectoPrecalculoWasm\obj\Debug\net9.0\compressed\ygvqkf3dsc-vh7thceqt8.gz
-C:\Users\lufuj\OneDrive\Documentos\OneDrive\Proyecto_Papitas\Proyecto_Papitas\ProyectoPrecalculoWasm\obj\Debug\net9.0\compressed\uiqklfay94-m5q9p7lpc5.gz
-C:\Users\lufuj\OneDrive\Documentos\OneDrive\Proyecto_Papitas\Proyecto_Papitas\ProyectoPrecalculoWasm\obj\Debug\net9.0\compressed\6tiviltlwk-n08j4uvsm3.gz
+C:\Users\lufuj\OneDrive\Documentos\OneDrive\Proyecto_Papitas\Proyecto_Papitas\ProyectoPrecalculoWasm\bin\Debug\net9.0\wwwroot\_framework\ProyectoPrecalculoWasm.6rhyhilhjo.pdb
+C:\Users\lufuj\OneDrive\Documentos\OneDrive\Proyecto_Papitas\Proyecto_Papitas\ProyectoPrecalculoWasm\bin\Debug\net9.0\wwwroot\_framework\ProyectoPrecalculoWasm.j764j9gwn2.wasm
+C:\Users\lufuj\OneDrive\Documentos\OneDrive\Proyecto_Papitas\Proyecto_Papitas\ProyectoPrecalculoWasm\bin\Debug\net9.0\wwwroot\_framework\ProyectoPrecalculoWasm.6rhyhilhjo.pdb.gz
+C:\Users\lufuj\OneDrive\Documentos\OneDrive\Proyecto_Papitas\Proyecto_Papitas\ProyectoPrecalculoWasm\bin\Debug\net9.0\wwwroot\_framework\ProyectoPrecalculoWasm.j764j9gwn2.wasm.gz
+C:\Users\lufuj\OneDrive\Documentos\OneDrive\Proyecto_Papitas\Proyecto_Papitas\ProyectoPrecalculoWasm\obj\Debug\net9.0\compressed\ygvqkf3dsc-j764j9gwn2.gz
+C:\Users\lufuj\OneDrive\Documentos\OneDrive\Proyecto_Papitas\Proyecto_Papitas\ProyectoPrecalculoWasm\obj\Debug\net9.0\compressed\uiqklfay94-6rhyhilhjo.gz
+C:\Users\lufuj\OneDrive\Documentos\OneDrive\Proyecto_Papitas\Proyecto_Papitas\ProyectoPrecalculoWasm\obj\Debug\net9.0\compressed\6tiviltlwk-cw5bwgfgn2.gz

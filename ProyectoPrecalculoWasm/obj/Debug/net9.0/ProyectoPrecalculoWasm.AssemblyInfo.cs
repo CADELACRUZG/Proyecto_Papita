@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyectoPrecalculoWasm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+406fdf8dd4ce5eb64562406094dc9a7de9ba1acf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6ae98cd6ab8c228d1c0e892cb38472936c7b05b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyectoPrecalculoWasm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyectoPrecalculoWasm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
