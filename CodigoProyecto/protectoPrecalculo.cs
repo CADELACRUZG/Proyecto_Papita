@@ -3,7 +3,7 @@ using System;
 class proyectoPrecalculo
 {
     int Eleccion;
-    void Main()
+    public static void Main()
     {
         Console.WriteLine("Bienvenido, seleccione la opción que desea resolver");
         Console.WriteLine("Problema No. 1: "); //Aqui pensaba poner una descripción o algo de cada figura

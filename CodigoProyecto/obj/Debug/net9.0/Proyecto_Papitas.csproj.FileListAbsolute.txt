@@ -1,0 +1,5 @@
+C:\Users\LUFU\Documents\OneDrive\Proyecto_Papitas\Proyecto_Papitas\CodigoProyecto\obj\Debug\net9.0\Proyecto_Papitas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LUFU\Documents\OneDrive\Proyecto_Papitas\Proyecto_Papitas\CodigoProyecto\obj\Debug\net9.0\Proyecto_Papitas.AssemblyInfoInputs.cache
+C:\Users\LUFU\Documents\OneDrive\Proyecto_Papitas\Proyecto_Papitas\CodigoProyecto\obj\Debug\net9.0\Proyecto_Papitas.AssemblyInfo.cs
+C:\Users\LUFU\Documents\OneDrive\Proyecto_Papitas\Proyecto_Papitas\CodigoProyecto\obj\Debug\net9.0\Proyecto_Papitas.csproj.CoreCompileInputs.cache
+C:\Users\LUFU\Documents\OneDrive\Proyecto_Papitas\Proyecto_Papitas\CodigoProyecto\obj\Debug\net9.0\Proyecto_Papitas.sourcelink.json

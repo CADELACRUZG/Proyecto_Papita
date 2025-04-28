@@ -29,3 +29,11 @@ C:\Users\virgi\OneDrive\Proyecto_Papitas\Proyecto_Papitas\obj\Debug\net9.0\Proye
 C:\Users\virgi\OneDrive\Proyecto_Papitas\Proyecto_Papitas\obj\Debug\net9.0\Proyecto_Papitas.dll
 C:\Users\virgi\OneDrive\Proyecto_Papitas\Proyecto_Papitas\obj\Debug\net9.0\refint\Proyecto_Papitas.dll
 C:\Users\virgi\OneDrive\Proyecto_Papitas\Proyecto_Papitas\obj\Debug\net9.0\Proyecto_Papitas.pdb
+C:\Users\LUFU\Documents\OneDrive\Proyecto_Papitas\Proyecto_Papitas\obj\Debug\net9.0\Proyecto_Papitas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LUFU\Documents\OneDrive\Proyecto_Papitas\Proyecto_Papitas\obj\Debug\net9.0\Proyecto_Papitas.AssemblyInfoInputs.cache
+C:\Users\LUFU\Documents\OneDrive\Proyecto_Papitas\Proyecto_Papitas\obj\Debug\net9.0\Proyecto_Papitas.AssemblyInfo.cs
+C:\Users\LUFU\Documents\OneDrive\Proyecto_Papitas\Proyecto_Papitas\obj\Debug\net9.0\Proyecto_Papitas.csproj.CoreCompileInputs.cache
+C:\Users\LUFU\Documents\OneDrive\Proyecto_Papitas\Proyecto_Papitas\obj\Debug\net9.0\Proyecto_Papitas.sourcelink.json
+C:\Users\LUFU\Documents\OneDrive\Proyecto_Papitas\Proyecto_Papitas\obj\Debug\net9.0\Proyecto_Papitas.dll
+C:\Users\LUFU\Documents\OneDrive\Proyecto_Papitas\Proyecto_Papitas\obj\Debug\net9.0\refint\Proyecto_Papitas.dll
+C:\Users\LUFU\Documents\OneDrive\Proyecto_Papitas\Proyecto_Papitas\obj\Debug\net9.0\Proyecto_Papitas.pdb
