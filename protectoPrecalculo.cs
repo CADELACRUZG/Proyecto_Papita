@@ -16,8 +16,7 @@ class proyectoPrecalculo
         do{
             if (int.TryParse(Console.ReadLine(), out Eleccion)) //elección de problema
             {
-                if (Eleccion<1||Eleccion>3)
-                {
+                if (Eleccion<1||Eleccion>3){
                    Console.WrtiteLine("Opción no válida, vuelva a intentar"); 
                 }
                 else{
@@ -40,9 +39,11 @@ class proyectoPrecalculo
                 problemaTres();
                 break;
         }
+        Console.Clear();
     }
     void problemaTres() //Trabajo de Luigi y Cruz
     {
+        int AB, BC;
         Console.WrtiteLine("Usted ha elegio el problema No. 3");
     }
 }

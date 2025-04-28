@@ -1757,19 +1757,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lufuj\\.nuget\\packages\\": {}
+    "C:\\Users\\chris\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lufuj\\OneDrive\\Documentos\\OneDrive\\Proyecto_Papitas\\Proyecto_Papitas\\ProyectoPrecalculoWasm\\ProyectoPrecalculoWasm.csproj",
+      "projectUniqueName": "C:\\Users\\chris\\OneDrive\\Proyecto_Papitas\\Proyecto_Papitas\\ProyectoPrecalculoWasm\\ProyectoPrecalculoWasm.csproj",
       "projectName": "ProyectoPrecalculoWasm",
-      "projectPath": "C:\\Users\\lufuj\\OneDrive\\Documentos\\OneDrive\\Proyecto_Papitas\\Proyecto_Papitas\\ProyectoPrecalculoWasm\\ProyectoPrecalculoWasm.csproj",
-      "packagesPath": "C:\\Users\\lufuj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lufuj\\OneDrive\\Documentos\\OneDrive\\Proyecto_Papitas\\Proyecto_Papitas\\ProyectoPrecalculoWasm\\obj\\",
+      "projectPath": "C:\\Users\\chris\\OneDrive\\Proyecto_Papitas\\Proyecto_Papitas\\ProyectoPrecalculoWasm\\ProyectoPrecalculoWasm.csproj",
+      "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\chris\\OneDrive\\Proyecto_Papitas\\Proyecto_Papitas\\ProyectoPrecalculoWasm\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lufuj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
